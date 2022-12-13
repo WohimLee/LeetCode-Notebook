@@ -71,6 +71,21 @@ public:
 		 return length;  
 	}
 };
+
+int main(int argc, char** argv){
+    int val1 = 3, val2 = 2;
+    vector<int> nums1 = {3,2,2,3};
+    vector<int> nums2 = {0,1,2,2,3,0,4,2};
+    vector<int>::iterator it = nums1.begin();
+
+    Solution s;
+    int res1 = s.merge(nums1, val1);
+    int res2 = s.merge(nums2, val2);
+    printf("res1 = %d\n", res1);
+    printf("res2 = %d\n", res2);
+
+    return 0;
+}
 ```
 
 >Solution2-cpp
@@ -87,4 +102,19 @@ public:
         return j;        
     }
 };
+
+int main(int argc, char** argv){
+    int val1 = 3, val2 = 2;
+    vector<int> nums1 = {3,2,2,3};
+    vector<int> nums2 = {0,1,2,2,3,0,4,2};
+    vector<int>::iterator it = nums1.begin();
+
+    Solution s;
+    int res1 = s.merge(nums1, val1);
+    int res2 = s.merge(nums2, val2);
+    printf("res1 = %d\n", res1);
+    printf("res2 = %d\n", res2);
+
+    return 0;
+}
 ```
