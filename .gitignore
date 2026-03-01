@@ -12,3 +12,5 @@ objs
 .vscode
 lib
 Test
+
+__pycache__
