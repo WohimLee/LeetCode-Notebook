@@ -90,3 +90,7 @@ class SolutionTwoStacks:
         # 返回当前函数结果。
         return cur
 
+
+if __name__ == "__main__":
+    solution = Solution()
+    print(solution.decodeString("3[a2[c]]"))

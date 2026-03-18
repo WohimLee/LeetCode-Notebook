@@ -190,3 +190,14 @@ class SolutionUnionFind:
 
         # 返回当前函数结果。
         return count
+
+
+if __name__ == "__main__":
+    solution = Solution()
+    grid = [
+        ["1", "1", "0", "0", "0"],
+        ["1", "1", "0", "0", "0"],
+        ["0", "0", "1", "0", "0"],
+        ["0", "0", "0", "1", "1"],
+    ]
+    print(solution.numIslands(grid))

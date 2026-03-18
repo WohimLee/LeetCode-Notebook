@@ -76,3 +76,13 @@ class SolutionRollingDP:
         # 返回当前函数结果。
         return best * best
 
+
+if __name__ == "__main__":
+    solution = Solution()
+    matrix = [
+        ["1", "0", "1", "0", "0"],
+        ["1", "0", "1", "1", "1"],
+        ["1", "1", "1", "1", "1"],
+        ["1", "0", "0", "1", "0"],
+    ]
+    print(solution.maximalSquare(matrix))

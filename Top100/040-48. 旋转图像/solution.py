@@ -52,3 +52,9 @@ class SolutionLayerByLayer:
                 # 初始化或更新变量 matrix[j][last]。
                 matrix[j][last] = top
 
+
+if __name__ == "__main__":
+    solution = Solution()
+    matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+    solution.rotate(matrix)
+    print(matrix)

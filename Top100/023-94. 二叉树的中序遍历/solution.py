@@ -86,3 +86,17 @@ class SolutionMorris:
         # 返回当前函数结果。
         return ans
 
+
+if __name__ == "__main__":
+    if "TreeNode" not in globals():
+        class TreeNode:
+            def __init__(self, val=0, left=None, right=None):
+                self.val = val
+                self.left = left
+                self.right = right
+
+    root = TreeNode(1)
+    root.right = TreeNode(2)
+    root.right.left = TreeNode(3)
+    solution = Solution()
+    print(solution.inorderTraversal(root))

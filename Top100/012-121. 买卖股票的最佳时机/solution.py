@@ -48,3 +48,8 @@ class SolutionDP:
         # 返回当前函数结果。
         return cash
 
+
+if __name__ == "__main__":
+    solution = Solution()
+    prices = [7, 1, 5, 3, 6, 4]
+    print(solution.maxProfit(prices))

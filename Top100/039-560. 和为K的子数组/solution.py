@@ -61,3 +61,7 @@ class SolutionPrefixBrute:
         # 返回当前函数结果。
         return ans
 
+
+if __name__ == "__main__":
+    solution = Solution()
+    print(solution.subarraySum([1, 1, 1], 2))

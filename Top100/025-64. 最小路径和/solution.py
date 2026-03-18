@@ -65,3 +65,8 @@ class SolutionRollingDP:
         # 返回当前函数结果。
         return dp[-1]
 
+
+if __name__ == "__main__":
+    solution = Solution()
+    grid = [[1, 3, 1], [1, 5, 1], [4, 2, 1]]
+    print(solution.minPathSum(grid))

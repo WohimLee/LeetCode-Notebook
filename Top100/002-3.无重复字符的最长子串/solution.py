@@ -56,3 +56,9 @@ class SolutionSetWindow:
             ans = max(ans, right - left + 1)
         # 返回当前函数结果。
         return ans
+
+
+if __name__ == "__main__":
+    solution = Solution()
+    s = "abcabcbb"
+    print(solution.lengthOfLongestSubstring(s))

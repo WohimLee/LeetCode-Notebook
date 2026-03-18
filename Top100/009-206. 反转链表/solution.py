@@ -103,3 +103,31 @@ class SolutionStack:
         cur.next = None
         # 返回当前函数结果。
         return new_head
+
+
+if __name__ == "__main__":
+    if "ListNode" not in globals():
+        class ListNode:
+            def __init__(self, val: int = 0, next=None):
+                self.val = val
+                self.next = next
+
+    def build_list(values):
+        dummy = ListNode(0)
+        cur = dummy
+        for v in values:
+            cur.next = ListNode(v)
+            cur = cur.next
+        return dummy.next
+
+    def list_to_values(head):
+        vals = []
+        while head:
+            vals.append(head.val)
+            head = head.next
+        return vals
+
+    solution = Solution()
+    head = build_list([1, 2, 3, 4, 5])
+    new_head = solution.reverseList(head)
+    print(list_to_values(new_head))

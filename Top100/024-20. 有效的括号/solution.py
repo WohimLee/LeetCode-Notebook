@@ -53,3 +53,7 @@ class SolutionPushExpected:
         # 返回当前函数结果。
         return not stack
 
+
+if __name__ == "__main__":
+    solution = Solution()
+    print(solution.isValid("()[]{}"))

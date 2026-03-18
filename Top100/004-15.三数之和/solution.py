@@ -107,3 +107,9 @@ class SolutionHash:
                 seen.add(b)
         # 返回当前函数结果。
         return ans
+
+
+if __name__ == "__main__":
+    solution = Solution()
+    nums = [-1, 0, 1, 2, -1, -4]
+    print(solution.threeSum(nums))

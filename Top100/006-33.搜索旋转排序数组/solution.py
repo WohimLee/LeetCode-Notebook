@@ -109,3 +109,10 @@ class SolutionPivot:
                 right = mid - 1
         # 返回当前函数结果。
         return -1
+
+
+if __name__ == "__main__":
+    solution = Solution()
+    nums = [4, 5, 6, 7, 0, 1, 2]
+    target = 0
+    print(solution.search(nums, target))

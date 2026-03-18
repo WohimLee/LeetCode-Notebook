@@ -61,3 +61,9 @@ class SolutionDP:
             ans = max(ans, dp[i])
         # 返回当前函数结果。
         return ans
+
+
+if __name__ == "__main__":
+    solution = Solution()
+    nums = [10, 9, 2, 5, 3, 7, 101, 18]
+    print(solution.lengthOfLIS(nums))

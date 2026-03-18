@@ -82,3 +82,31 @@ class SolutionPointerSwap:
         # 返回当前函数结果。
         return dummy.next
 
+
+if __name__ == "__main__":
+    if "ListNode" not in globals():
+        class ListNode:
+            def __init__(self, val: int = 0, next=None):
+                self.val = val
+                self.next = next
+
+    def build_list(values):
+        dummy = ListNode(0)
+        cur = dummy
+        for v in values:
+            cur.next = ListNode(v)
+            cur = cur.next
+        return dummy.next
+
+    def list_to_values(head):
+        vals = []
+        while head:
+            vals.append(head.val)
+            head = head.next
+        return vals
+
+    l1 = build_list([1, 2, 4])
+    l2 = build_list([1, 3, 4])
+    solution = Solution()
+    merged = solution.mergeTwoLists(l1, l2)
+    print(list_to_values(merged))

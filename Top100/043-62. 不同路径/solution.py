@@ -32,3 +32,7 @@ class SolutionDP:
         # 返回当前函数结果。
         return dp[-1]
 
+
+if __name__ == "__main__":
+    solution = Solution()
+    print(solution.uniquePaths(3, 7))

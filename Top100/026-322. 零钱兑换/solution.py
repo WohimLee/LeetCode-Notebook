@@ -73,3 +73,7 @@ class SolutionBFS:
         # 返回当前函数结果。
         return -1
 
+
+if __name__ == "__main__":
+    solution = Solution()
+    print(solution.coinChange([1, 2, 5], 11))

@@ -62,3 +62,8 @@ class SolutionInPlace:
         # 返回当前函数结果。
         return intervals[: write + 1]
 
+
+if __name__ == "__main__":
+    solution = Solution()
+    intervals = [[1, 3], [2, 6], [8, 10], [15, 18]]
+    print(solution.merge(intervals))

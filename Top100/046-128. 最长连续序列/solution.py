@@ -66,3 +66,7 @@ class SolutionBoundaryMap:
         # 返回当前函数结果。
         return ans
 
+
+if __name__ == "__main__":
+    solution = Solution()
+    print(solution.longestConsecutive([100, 4, 200, 1, 3, 2]))

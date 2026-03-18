@@ -119,3 +119,7 @@ class SolutionFiltered:
         # 返回当前函数结果。
         return '' if best[0] == float('inf') else s[best[1] : best[2] + 1]
 
+
+if __name__ == "__main__":
+    solution = Solution()
+    print(solution.minWindow("ADOBECODEBANC", "ABC"))

@@ -64,3 +64,7 @@ class SolutionPrefixSuffix:
         # 返回当前函数结果。
         return ans
 
+
+if __name__ == "__main__":
+    solution = Solution()
+    print(solution.maxProduct([2, 3, -2, 4]))

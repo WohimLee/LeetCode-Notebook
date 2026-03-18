@@ -107,3 +107,17 @@ class SolutionTwoStacks:
         # 返回当前函数结果。
         return int(ans)
 
+
+if __name__ == "__main__":
+    if "TreeNode" not in globals():
+        class TreeNode:
+            def __init__(self, val=0, left=None, right=None):
+                self.val = val
+                self.left = left
+                self.right = right
+
+    root = TreeNode(-10)
+    root.left = TreeNode(9)
+    root.right = TreeNode(20, TreeNode(15), TreeNode(7))
+    solution = Solution()
+    print(solution.maxPathSum(root))

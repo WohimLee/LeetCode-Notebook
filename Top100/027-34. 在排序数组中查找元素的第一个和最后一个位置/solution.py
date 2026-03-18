@@ -61,3 +61,7 @@ class SolutionBisect:
         # 返回当前函数结果。
         return [-1, -1]
 
+
+if __name__ == "__main__":
+    solution = Solution()
+    print(solution.searchRange([5, 7, 7, 8, 8, 10], 8))

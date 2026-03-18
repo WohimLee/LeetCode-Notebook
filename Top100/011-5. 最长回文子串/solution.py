@@ -105,3 +105,8 @@ class SolutionDP:
         # 返回当前函数结果。
         return s[start : start + max_len]
 
+
+if __name__ == "__main__":
+    solution = Solution()
+    s = "babad"
+    print(solution.longestPalindrome(s))

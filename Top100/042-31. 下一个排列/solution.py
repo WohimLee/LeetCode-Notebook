@@ -68,3 +68,9 @@ class SolutionSortSuffix:
         # 初始化或更新变量 nums[i + 1 :]。
         nums[i + 1 :] = sorted(nums[i + 1 :])
 
+
+if __name__ == "__main__":
+    solution = Solution()
+    nums = [1, 2, 3]
+    solution.nextPermutation(nums)
+    print(nums)

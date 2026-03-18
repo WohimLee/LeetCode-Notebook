@@ -114,3 +114,7 @@ class SolutionKth:
         # 返回当前函数结果。
         return (a + b) / 2.0
 
+
+if __name__ == "__main__":
+    solution = Solution()
+    print(solution.findMedianSortedArrays([1, 3], [2]))

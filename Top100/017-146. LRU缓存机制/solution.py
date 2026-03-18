@@ -145,3 +145,15 @@ class LRUCacheOrderedDict:
             # 调用函数/方法，推进当前步骤。
             self.data.popitem(last=False)
 
+
+if __name__ == "__main__":
+    cache = LRUCache(2)
+    cache.put(1, 1)
+    cache.put(2, 2)
+    print(cache.get(1))
+    cache.put(3, 3)
+    print(cache.get(2))
+    cache.put(4, 4)
+    print(cache.get(1))
+    print(cache.get(3))
+    print(cache.get(4))

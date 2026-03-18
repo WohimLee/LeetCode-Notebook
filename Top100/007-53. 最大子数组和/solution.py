@@ -72,3 +72,9 @@ class SolutionDPArray:
             ans = max(ans, dp[i])
         # 返回当前函数结果。
         return ans
+
+
+if __name__ == "__main__":
+    solution = Solution()
+    nums = [-2, 1, -3, 4, -1, 2, 1, -5, 4]
+    print(solution.maxSubArray(nums))

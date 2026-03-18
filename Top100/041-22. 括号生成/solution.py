@@ -67,3 +67,7 @@ class SolutionDP:
         # 返回当前函数结果。
         return dp[n]
 
+
+if __name__ == "__main__":
+    solution = Solution()
+    print(solution.generateParenthesis(3))

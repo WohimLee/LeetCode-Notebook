@@ -151,3 +151,10 @@ class SolutionCounting:
 
         # 主动抛出异常，提示输入或状态不合法。
         raise ValueError("invalid input")
+
+
+if __name__ == "__main__":
+    solution = Solution()
+    nums = [3, 2, 1, 5, 6, 4]
+    k = 2
+    print(solution.findKthLargest(nums, k))
